@@ -3,7 +3,7 @@ import SwiftUI
 
 @main
 @MainActor
-struct KyotoApp {
+struct HumApp {
     static func main() {
         let app = NSApplication.shared
         let delegate = AppDelegate()
@@ -22,7 +22,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         statusItem = NSStatusBar.system.statusItem(withLength: NSStatusItem.squareLength)
 
         if let button = statusItem.button {
-            button.image = NSImage(systemSymbolName: "music.note", accessibilityDescription: "Kyoto")
+            button.image = NSImage(systemSymbolName: "music.note", accessibilityDescription: "Hum")
             button.action = #selector(togglePopover)
             button.target = self
         }

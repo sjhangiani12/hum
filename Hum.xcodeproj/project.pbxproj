@@ -20,9 +20,9 @@
 		A2000003 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
 		A2000004 /* RecognizedSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognizedSong.swift; sourceTree = "<group>"; };
 		A2000005 /* SongLogger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongLogger.swift; sourceTree = "<group>"; };
-		A2000010 /* Kyoto.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kyoto.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2000010 /* Hum.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hum.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A2000012 /* Kyoto.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Kyoto.entitlements; sourceTree = "<group>"; };
+		A2000012 /* Hum.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hum.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,13 +39,13 @@
 		A4000001 = {
 			isa = PBXGroup;
 			children = (
-				A4000002 /* Sources/Kyoto */,
+				A4000002 /* Sources/Hum */,
 				A4000004 /* Resources */,
 				A4000003 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A4000002 /* Sources/Kyoto */ = {
+		A4000002 /* Sources/Hum */ = {
 			isa = PBXGroup;
 			children = (
 				A2000001 /* App.swift */,
@@ -54,13 +54,13 @@
 				A2000004 /* RecognizedSong.swift */,
 				A2000005 /* SongLogger.swift */,
 			);
-			path = Sources/Kyoto;
+			path = Sources/Hum;
 			sourceTree = "<group>";
 		};
 		A4000003 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A2000010 /* Kyoto.app */,
+				A2000010 /* Hum.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,7 +69,7 @@
 			isa = PBXGroup;
 			children = (
 				A2000011 /* Info.plist */,
-				A2000012 /* Kyoto.entitlements */,
+				A2000012 /* Hum.entitlements */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -77,9 +77,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A5000001 /* Kyoto */ = {
+		A5000001 /* Hum */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A7000003 /* Build configuration list for PBXNativeTarget "Kyoto" */;
+			buildConfigurationList = A7000003 /* Build configuration list for PBXNativeTarget "Hum" */;
 			buildPhases = (
 				A6000001 /* Sources */,
 				A3000001 /* Frameworks */,
@@ -88,9 +88,9 @@
 			);
 			dependencies = (
 			);
-			name = Kyoto;
-			productName = Kyoto;
-			productReference = A2000010 /* Kyoto.app */;
+			name = Hum;
+			productName = Hum;
+			productReference = A2000010 /* Hum.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -103,7 +103,7 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 			};
-			buildConfigurationList = A7000001 /* Build configuration list for PBXProject "Kyoto" */;
+			buildConfigurationList = A7000001 /* Build configuration list for PBXProject "Hum" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -116,7 +116,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A5000001 /* Kyoto */,
+				A5000001 /* Hum */,
 			);
 		};
 /* End PBXProject section */
@@ -201,7 +201,7 @@
 		A9000003 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Resources/Kyoto.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/Hum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -220,7 +220,7 @@
 		A9000004 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_ENTITLEMENTS = Resources/Kyoto.entitlements;
+				CODE_SIGN_ENTITLEMENTS = Resources/Hum.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
@@ -239,7 +239,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A7000001 /* Build configuration list for PBXProject "Kyoto" */ = {
+		A7000001 /* Build configuration list for PBXProject "Hum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9000001 /* Debug */,
@@ -248,7 +248,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A7000003 /* Build configuration list for PBXNativeTarget "Kyoto" */ = {
+		A7000003 /* Build configuration list for PBXNativeTarget "Hum" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				A9000003 /* Debug */,

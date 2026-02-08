@@ -14,7 +14,7 @@ final class SongLogger: Sendable {
         let entry = song.markdownEntry
 
         if !FileManager.default.fileExists(atPath: fileURL.path) {
-            let header = "# Shazam Log\n\nSongs identified by Kyoto.\n\n---\n\n"
+            let header = "# Shazam Log\n\nSongs identified by Hum.\n\n---\n\n"
             let data = (header + entry).data(using: .utf8)!
             FileManager.default.createFile(atPath: fileURL.path, contents: data)
         } else {

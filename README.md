@@ -1,4 +1,4 @@
-# Kyoto
+# Hum
 
 A lightweight macOS menu bar app that identifies songs playing around you — like Shazam, but lives in your toolbar.
 
@@ -16,13 +16,13 @@ A lightweight macOS menu bar app that identifies songs playing around you — li
 
 ## Download
 
-Grab the latest `Kyoto.zip` from [Releases](../../releases), unzip, and drag `Kyoto.app` to your Applications folder.
+Grab the latest `Hum.zip` from [Releases](../../releases), unzip, and drag `Hum.app` to your Applications folder.
 
 On first launch, right-click the app and choose **Open** (macOS will warn about unidentified developer on first run).
 
 ## How it works
 
-Kyoto uses Apple's [ShazamKit](https://developer.apple.com/shazamkit/) framework to match audio from your microphone against Shazam's catalog. When you click "Shazam", it listens for a few seconds, identifies the song, and shows you the result.
+Hum uses Apple's [ShazamKit](https://developer.apple.com/shazamkit/) framework to match audio from your microphone against Shazam's catalog. When you click "Shazam", it listens for a few seconds, identifies the song, and shows you the result.
 
 Songs are logged to a markdown file at `~/Documents/ShazamLog.md` that looks like:
 
@@ -44,7 +44,7 @@ Requires:
 
 Steps:
 1. Clone the repo
-2. Open `Kyoto.xcodeproj` in Xcode
+2. Open `Hum.xcodeproj` in Xcode
 3. In Signing & Capabilities, set your team and bundle identifier
 4. Register your bundle ID at [developer.apple.com](https://developer.apple.com) with the ShazamKit App Service enabled
 5. Build and run (Cmd+R)

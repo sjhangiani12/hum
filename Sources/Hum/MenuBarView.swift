@@ -190,7 +190,7 @@ struct MenuBarView: View {
                 let logger = SongLogger()
                 let url = logger.fileURL
                 if !FileManager.default.fileExists(atPath: url.path) {
-                    let header = "# Shazam Log\n\nSongs identified by Kyoto.\n\n---\n\n"
+                    let header = "# Shazam Log\n\nSongs identified by Hum.\n\n---\n\n"
                     FileManager.default.createFile(atPath: url.path, contents: header.data(using: .utf8))
                 }
                 NSWorkspace.shared.open(url)

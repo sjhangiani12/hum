@@ -5,11 +5,11 @@
     <key>CFBundleIdentifier</key>
     <string>com.kyoto.shazam</string>
     <key>CFBundleName</key>
-    <string>Kyoto</string>
+    <string>Hum</string>
     <key>CFBundleDisplayName</key>
-    <string>Kyoto</string>
+    <string>Hum</string>
     <key>CFBundleExecutable</key>
-    <string>Kyoto</string>
+    <string>Hum</string>
     <key>CFBundleVersion</key>
     <string>1</string>
     <key>CFBundleShortVersionString</key>
@@ -19,7 +19,7 @@
     <key>LSUIElement</key>
     <true/>
     <key>NSMicrophoneUsageDescription</key>
-    <string>Kyoto needs microphone access to identify songs playing nearby.</string>
+    <string>Hum needs microphone access to identify songs playing nearby.</string>
     <key>LSMinimumSystemVersion</key>
     <string>14.0</string>
 </dict>
