@@ -66,9 +66,7 @@ struct MenuBarView: View {
 
     private func foundView(title: String, artist: String) -> some View {
         VStack(spacing: 8) {
-            Image(systemName: "music.note")
-                .font(.title)
-                .foregroundStyle(.purple)
+            artworkImage(url: recognizer.lastSong?.artworkURL, size: 60)
 
             Text(title)
                 .font(.headline)
@@ -162,7 +160,8 @@ struct MenuBarView: View {
                 .foregroundStyle(.secondary)
 
             ForEach(recognizer.recentSongs.prefix(5)) { song in
-                HStack {
+                HStack(spacing: 8) {
+                    artworkImage(url: song.artworkURL, size: 24)
                     VStack(alignment: .leading, spacing: 1) {
                         Text(song.title)
                             .font(.caption)
@@ -210,6 +209,35 @@ struct MenuBarView: View {
     }
 
     // MARK: - Helpers
+
+    private func artworkImage(url: URL?, size: CGFloat) -> some View {
+        Group {
+            if let url {
+                AsyncImage(url: url) { phase in
+                    switch phase {
+                    case .success(let image):
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fill)
+                    default:
+                        artworkPlaceholder(size: size)
+                    }
+                }
+            } else {
+                artworkPlaceholder(size: size)
+            }
+        }
+        .frame(width: size, height: size)
+        .clipShape(RoundedRectangle(cornerRadius: size > 30 ? 8 : 4))
+    }
+
+    private func artworkPlaceholder(size: CGFloat) -> some View {
+        Image(systemName: "music.note")
+            .font(size > 30 ? .title : .caption2)
+            .foregroundStyle(.purple)
+            .frame(width: size, height: size)
+            .background(.purple.opacity(0.1))
+    }
 
     private func timeAgo(_ date: Date) -> String {
         let seconds = Int(Date().timeIntervalSince(date))

@@ -20,6 +20,8 @@
     <true/>
     <key>NSMicrophoneUsageDescription</key>
     <string>Hum needs microphone access to identify songs playing nearby.</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
     <key>LSMinimumSystemVersion</key>
     <string>14.0</string>
 </dict>
